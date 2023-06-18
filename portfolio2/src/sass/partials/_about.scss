@@ -5,3 +5,17 @@
   margin: 0 auto;
   margin-top: 90px;
 }
+.profile_img {
+  display: flex;
+  border-radius: 50%;
+  width: 80%;
+  margin: 40px auto;
+}
+.lottie_animation {
+  display: none;
+}
+@media (min-width: 1290px) {
+  .lottie_animation {
+    display: block;
+  }
+}

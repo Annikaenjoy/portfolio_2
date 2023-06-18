@@ -8,12 +8,33 @@ import Col from "react-bootstrap/Col";
 // React Scroll
 import { Element } from "react-scroll";
 
+// Lottie
+import LottieAnimation from "../components/Lottie";
+import home from "../assets/animation/lottie.json";
+
+// Image
+import Annika from "../assets/images/Profilbilde2.jpg";
+
 const About = (props) => {
   return (
     <>
       <Element name="about"></Element>
+
       <Container className="about_container">
+        <div className="heading_container">
+          <h1>Frontend</h1>
+          <h2>Developer</h2>
+        </div>
         <Row>
+          {" "}
+          <Col md={6}>
+            <img
+              className="profile_img"
+              src={Annika}
+              alt="Picture of me"
+              title="Annika Louise Engøy"
+            />
+          </Col>
           <Col md={6}>
             <div className="heading_container">
               <h1>About</h1>
@@ -39,9 +60,11 @@ const About = (props) => {
                   building our own products and helping various clients build
                   their digital brand and identity. Here you can check out some
                   of the websites I've created. */}
-            </p>
+            </p>{" "}
+            <div className="lottie_animation">
+              <LottieAnimation lotti={home} height={200} width={200} />
+            </div>
           </Col>
-          <Col md={6}></Col>
         </Row>
       </Container>
     </>

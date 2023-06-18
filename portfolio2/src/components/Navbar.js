@@ -6,9 +6,6 @@ import { Link } from "react-scroll";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
-// Logo
-import Logo from "../assets/images/Logo-a1.png";
-
 const NavBar = () => {
   return (
     <>
@@ -19,8 +16,8 @@ const NavBar = () => {
         variant="dark"
         expand="lg"
       >
-        <Navbar.Brand href="/">
-          <img className="logo" src={Logo} alt="logo" />
+        <Navbar.Brand className="logo" href="/">
+          Annika Engøy{" "}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

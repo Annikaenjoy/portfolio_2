@@ -1,0 +1,74 @@
+.contact_container {
+  position: relative;
+  top: 55px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contact_box {
+  margin: 20px auto;
+  width: 90%;
+  padding: 50px;
+}
+.form_input {
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  background-color: $color-white;
+  width: 90%;
+  margin: 10px auto;
+  font-family: $font-primary;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px;
+}
+#message {
+  min-height: 150px;
+}
+.form-button {
+  width: 90%;
+  padding: 10px;
+  margin: auto;
+  font-family: $font-primary;
+  font-size: 14px;
+  text-align: center;
+  color: $color-primary;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: rgba(255, 153, 15, 0.8);
+  border-radius: 5px;
+  border: none;
+  display: block;
+}
+.form-button:hover {
+  background: $color-secondary;
+}
+.setFormError {
+  font-family: $font-secondary;
+  font-size: 14px;
+  color: $color-white;
+  padding: 5px;
+  text-align: center;
+}
+
+.setFormSuccess {
+  text-align: center;
+  font-family: $font-secondary;
+  font-size: 14px;
+  color: $color-white;
+  padding: 5px;
+}
+
+@media (min-width: 700px) {
+  .form_input {
+    width: 70%;
+  }
+  .form-button {
+    width: 70%;
+  }
+}
+@media (min-width: 900px) {
+  .contact_box {
+    width: 60%;
+  }
+}

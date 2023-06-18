@@ -1,0 +1,66 @@
+.portfolio_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.cards {
+  border: none;
+  margin: 20px 0;
+  padding: 15px;
+}
+.card {
+  border: none;
+}
+.card-body {
+  background-color: $color-primary;
+  padding: 0;
+}
+.card-title {
+  margin: 20px 0;
+  color: $color-white;
+}
+.card-text {
+  height: 80px;
+}
+.git_link {
+  display: flex;
+  font-family: $font-primary;
+  font-size: 14px;
+  font-weight: 400;
+  color: $color-white;
+}
+.live_link {
+  font-family: $font-primary;
+  font-size: 14px;
+  font-weight: 600;
+  color: $color-white;
+  letter-spacing: 1px;
+}
+.live_link:hover {
+  color: $color-white;
+  text-decoration: underline;
+}
+.card_btn {
+  background-color: $color-primary;
+  border: 1px solid $color-white;
+}
+.card_btn:hover {
+  background-color: $color-primary;
+  border: 1px solid $color-secondary;
+}
+
+@media (min-width: 768px) {
+  .card-text {
+    height: 170px;
+  }
+}
+@media (min-width: 992px) {
+  .card-text {
+    height: 120px;
+  }
+}
+@media (min-width: 1300px) {
+  .card-text {
+    height: 100px;
+  }
+}

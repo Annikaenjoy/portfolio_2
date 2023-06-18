@@ -12,8 +12,18 @@ import { Element } from "react-scroll";
 import LottieAnimation from "../components/Lottie";
 import home from "../assets/animation/lottie.json";
 
-// Image
-import Annika from "../assets/images/Profilbilde2.jpg";
+// FontAwesome Icons
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import {
+  faWordpress,
+  faCss3,
+  faGithub,
+  faHtml5,
+  faJsSquare,
+  faReact,
+} from "@fortawesome/free-brands-svg-icons";
 
 const About = (props) => {
   return (
@@ -28,12 +38,36 @@ const About = (props) => {
         <Row>
           {" "}
           <Col md={6}>
-            <img
+            {/* <img
               className="profile_img"
               src={Annika}
               alt="Picture of me"
               title="Annika Louise Engøy"
-            />
+                      /> */}
+            <div md={6} className="cube_col">
+              <div className="stage-cube-cont">
+                <div className="cubespinner">
+                  <div className="face1">
+                    <FontAwesomeIcon icon={faWordpress} color="#DD0031" />
+                  </div>
+                  <div className="face2">
+                    <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+                  </div>
+                  <div className="face3">
+                    <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+                  </div>
+                  <div className="face4">
+                    <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+                  </div>
+                  <div className="face5">
+                    <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+                  </div>
+                  <div className="face6">
+                    <FontAwesomeIcon icon={faGithub} color="#EC4D28" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </Col>
           <Col md={6}>
             <div className="heading_container">

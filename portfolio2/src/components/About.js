@@ -8,12 +8,7 @@ import Col from "react-bootstrap/Col";
 // React Scroll
 import { Element } from "react-scroll";
 
-// Lottie
-import LottieAnimation from "../components/Lottie";
-import home from "../assets/animation/lottie.json";
-
 // FontAwesome Icons
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
@@ -31,19 +26,9 @@ const About = (props) => {
       <Element name="about"></Element>
 
       <Container className="about_container">
-        <div className="heading_container">
-          <h1>Frontend</h1>
-          <h2>Developer</h2>
-        </div>
         <Row>
           {" "}
           <Col md={6}>
-            {/* <img
-              className="profile_img"
-              src={Annika}
-              alt="Picture of me"
-              title="Annika Louise Engøy"
-                      /> */}
             <div md={6} className="cube_col">
               <div className="stage-cube-cont">
                 <div className="cubespinner">
@@ -86,18 +71,16 @@ const About = (props) => {
               Media, and I could not be happier. <br /> <br />A year into my
               studies I got a job as a Frontend Developer in a startup company,
               creating our own products and helping various clients build their
-              digital brand and identity. I then went on to work at TietoEvry as
-              an Analyst at their Financial Crime Prevention Center. I'm now on
-              maternity leave.
+              digital brand and identity. I'm currently on maternity leave, but
+              will start my new job as a webdeveloper for Riktig Spor in august.{" "}
+              <br /> <br />
+              Feel free to contact me if you have any questions!
               {/* Today I have the priviledge of working as a Frontend Developer
                   in a startup company, being there every step of the way
                   building our own products and helping various clients build
                   their digital brand and identity. Here you can check out some
                   of the websites I've created. */}
             </p>{" "}
-            <div className="lottie_animation">
-              <LottieAnimation lotti={home} height={200} width={200} />
-            </div>
           </Col>
         </Row>
       </Container>

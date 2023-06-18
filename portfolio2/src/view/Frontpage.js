@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import About from "../components/About";
 import ContactMe from "../components/Contact";
+import Header from "../components/Header";
 
 const Frontpage = (props) => {
   React.useEffect(() => {
@@ -14,6 +15,7 @@ const Frontpage = (props) => {
   return (
     <>
       <Navbar />
+      <Header />
       <About />
       <ContactMe />
       <Footer />

@@ -1,6 +1,6 @@
 # Portfolio 2
 
-![Screenshot of website when running](./assets//img//website_img.png)
+![Screenshot of website when running](./src//assets//images//website_img.png)
 
 ## Description
 

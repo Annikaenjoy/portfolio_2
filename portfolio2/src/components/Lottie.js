@@ -14,7 +14,7 @@ export default function LottieAnimation({ lotti, width, height }) {
 
   return (
     <div>
-      <Link to="contact" spy={true} smooth={true} offset={-70} duration={500}>
+      <Link to="about" spy={true} smooth={true} offset={-70} duration={500}>
         <Lottie
           className="lottie_animation"
           options={defaultOptions}

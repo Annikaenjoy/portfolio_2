@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import send from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 
 // React Scroll
 import { Element } from "react-scroll";
@@ -51,12 +51,13 @@ const ContactMe = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      send(
-        "service_422eql4",
-        "template_w0pkmhc",
-        formData,
-        "user_WY3bL8gaVmOVCMW56d01O"
-      )
+      emailjs
+        .send(
+          "service_2nikw8c",
+          "template_8grr5l1",
+          formData,
+          "tyQsw42PGJK3QoaV-"
+        )
         .then((response) => {
           console.log("SUCCESS!", response.status, response.text);
           setFormSuccess("Your message has successfully been sendt!");

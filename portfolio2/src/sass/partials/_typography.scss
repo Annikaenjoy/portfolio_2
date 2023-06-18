@@ -1,0 +1,40 @@
+.heading_container {
+  position: relative;
+  top: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+h1 {
+  font-family: $font-primary;
+  font-size: 60px;
+  color: rgba(255, 153, 15, 0.5);
+  font-weight: 900;
+}
+h2 {
+  font-family: $font-primary;
+  font-size: 60px;
+  color: $color-secondary;
+  font-weight: 900;
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  z-index: 100;
+}
+h3 {
+  font-family: $font-primary;
+  font-size: 18px;
+  font-weight: 400;
+  color: $color-white;
+}
+a {
+  color: $color-link;
+  text-decoration: none;
+  font-family: $font-primary;
+  font-size: 14px;
+}
+p {
+  font-family: $font-primary;
+  font-size: 16px;
+  font-weight: 400;
+  color: $color-white;
+}
